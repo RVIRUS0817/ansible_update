@@ -1,0 +1,4 @@
+- name: yum update
+  shell: yum update -y {{ item }}
+  with_items:
+    - "{{ UPDATE_TARGETS }}"

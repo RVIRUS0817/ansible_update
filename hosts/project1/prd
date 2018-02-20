@@ -1,0 +1,5 @@
+[web]
+prd-web01
+
+[prd:children]
+web
