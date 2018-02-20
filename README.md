@@ -19,7 +19,7 @@ web
 2.Describe the middleware you want to update to group_vars / all   
 
 ```
-# vim group_vars/all
+$ vim group_vars/all
 #update targets
 
 #vars:
