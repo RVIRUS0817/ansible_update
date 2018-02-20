@@ -4,7 +4,19 @@ I think it is awkward to update the vulnerability detected by Vuls by logging in
 
 # Vulnerability Update Method
 
-1.Describe the middleware you want to update to group_vars / all   
+1.u have to write hosts 
+
+```
+$ vim hosts/project1/dev
+[web]
+dev-web01
+
+[dev:children]
+web
+
+```
+
+2.Describe the middleware you want to update to group_vars / all   
 
 ```
 # vim group_vars/all
