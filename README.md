@@ -6,6 +6,18 @@ I think it is awkward to update the vulnerability detected by Vuls by logging in
 
 1.Describe the middleware you want to update to group_vars / all   
 
+```
+# vim group_vars/all
+#update targets
+
+#vars:
+UPDATE_TARGETS:
+  - "python27"
+  - "kernel"
+
+```
+
+
 When a vulnerability is detected, first of all middleware is written in group_vars / all. In /roles/updates/tasks/main.yml, with_items is being used and assigned.
 
 # Caution
@@ -20,8 +32,8 @@ When specifying a host, you need to specify it from the hosts directory when you
 You can specify only one host that you want to update with [-l host name].  
 
 ```
-$ ansible-playbook - privile - key = (key) - i hosts / (env) - u (user) vuls - update.yml - check
+$ ansible-playbook -privile-key=(key) -i hosts/project1/dev -u (user) vuls-update.yml - check
 ```
 ```
-$ ansible-playbook -private-key = (key) -i hosts / (env) -u (user) -l (host) vuls-update.yml --check
+$ ansible-playbook -private-key=(key) -i hosts/project1/dev -u (user) vuls-update.yml 
 ```
