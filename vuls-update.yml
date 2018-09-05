@@ -1,5 +1,3 @@
-##all
 - hosts: all
-  become: True
   roles:
     - updates
