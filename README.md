@@ -2,7 +2,12 @@
 
 I think it is awkward to update the vulnerability detected by Vuls by logging in to the server every time. So I registered servers managed by ansible and updated it with one shot.
 
-# Vulnerability Update Method
+
+## OS
+
+CentOS/Amazon Linux   
+
+## Vulnerability Update Method
 
 1.u have to write hosts 
 
@@ -29,11 +34,11 @@ UPDATE_TARGETS:
 
 When a vulnerability is detected, first of all middleware is written in group_vars / all. In /roles/updates/tasks/main.yml, with_items is being used and assigned.
 
-# Caution
+## Caution
 If there is a blank value, yum update - y will be executed and all will be updated.  
 Please delete unnecessary [- ""] and then let it flow.  
 
-# Dryrun/Run
+## Dryrun/Run
 
 The part of updates is skiping, but do not worry as it is the shell module specification.  
 
