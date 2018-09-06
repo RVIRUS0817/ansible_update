@@ -1,5 +1,2 @@
-#update targets
-
-#vars:
 UPDATE_TARGETS:
-  - "python27"
+  - "kernel"
