@@ -20,9 +20,6 @@ web
 
 ```
 $ vim group_vars/all
-#update targets
-
-#vars:
 UPDATE_TARGETS:
   - "python27"
   - "kernel"
@@ -44,8 +41,8 @@ When specifying a host, you need to specify it from the hosts directory when you
 You can specify only one host that you want to update with [-l host name].  
 
 ```
-$ ansible-playbook -privile-key=(key) -i hosts/project1/dev -u (user) vuls-update.yml - check
+$ ansible-playbook -i hosts/project1/dev vuls-update.yml -kKD -C
 ```
 ```
-$ ansible-playbook -private-key=(key) -i hosts/project1/dev -u (user) vuls-update.yml 
+$ ansible-playbook -i hosts/project1/dev vuls-update.yml -kKD 
 ```
