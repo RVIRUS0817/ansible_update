@@ -1,5 +1,8 @@
 # ansible_update
 
+![download](https://user-images.githubusercontent.com/5633085/45217044-a1fc8e80-b2dd-11e8-9b97-4e2fce0932fc.jpg)
+
+
 I think it is awkward to update the vulnerability detected by Vuls by logging in to the server every time. So I registered servers managed by ansible and updated it with one shot.
 
 
