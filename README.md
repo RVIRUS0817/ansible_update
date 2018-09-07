@@ -35,7 +35,7 @@ UPDATE_TARGETS:
 3.fix update.yml
 
 
-When a vulnerability is detected, first of all middleware is written in group_vars / all. In /roles/updates/tasks/main.yml, with_items is being used and assigned.
+When a vulnerability is detected, first of all middleware is written in group_vars / all. In main.yml, with_items is being used and assigned.
 
 ## Caution
 If there is a blank value, yum update - y will be executed and all will be updated.  
