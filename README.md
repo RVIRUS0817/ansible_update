@@ -6,6 +6,7 @@ I think it is awkward to update the vulnerability detected by Vuls by logging in
 ## OS
 
 CentOS/Amazon Linux   
+Ubuntu  
 
 ## Vulnerability Update Method
 
@@ -30,6 +31,8 @@ UPDATE_TARGETS:
   - "kernel"
 
 ```
+
+3.fix update.yml
 
 
 When a vulnerability is detected, first of all middleware is written in group_vars / all. In /roles/updates/tasks/main.yml, with_items is being used and assigned.

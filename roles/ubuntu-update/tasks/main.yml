@@ -1,0 +1,4 @@
+- name: apt-get update,upgrade
+  shell: apt-get update ; apt-get upgrade {{ item }} 
+  with_items:
+    - "{{ UPDATE_TARGETS }}"

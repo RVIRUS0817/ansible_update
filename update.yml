@@ -1,0 +1,11 @@
+- hosts: dev-web01
+  roles:
+    - centos-update
+
+- hosts: prd-web01
+  roles:
+    - centos-update
+
+- hosts: stg
+  roles:
+    - ubuntu-update
