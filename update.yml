@@ -6,6 +6,6 @@
   roles:
     - centos-update
 
-- hosts: stg
+- hosts: stg-web01
   roles:
     - ubuntu-update
