@@ -25,7 +25,7 @@ web
 
 ```
 
-2.Describe the middleware you want to update to group_vars / all   
+2.Describe the package name you want to update to group_vars / all   
 
 ```
 $ vim group_vars/all
