@@ -1,4 +1,4 @@
 - name: yum update
   shell: yum update -y {{ item }}
-  with_items:
+  loop:
     - "{{ UPDATE_TARGETS }}"

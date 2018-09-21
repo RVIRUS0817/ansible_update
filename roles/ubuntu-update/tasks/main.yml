@@ -1,4 +1,4 @@
 - name: apt-get update,upgrade
   shell: apt-get update ; apt-get upgrade {{ item }} 
-  with_items:
+  loop:
     - "{{ UPDATE_TARGETS }}"
